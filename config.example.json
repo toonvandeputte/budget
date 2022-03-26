@@ -1,0 +1,34 @@
+{
+    "tagsmap": {
+        "colruyt": {
+            "find": ["colruyt"],
+            "field": ["details"]
+        },
+        "delhaize": {
+            "find": ["delhaize"],
+            "field": ["details"]
+        },
+        "albertheijn": {
+            "find": ["ALBERT HEIJN"],
+            "field": ["details"]
+        },
+        "supermarkt": {
+            "find": ["colruyt", "delhaize", "ALBERT HEIJN"],
+            "field": ["details"]
+        },
+        "goeddoel": {
+            "find": ["planbelgium", "WWF NL", "Rode kruis", "Wikimedia"],
+            "field": ["tegenpartij", "details"]
+        }
+    },
+    "replacepatterns": {
+        "amazonprime": {
+            "pattern": ["AMZNPRIME", "AMZN Digital"],
+            "field": ["tegenpartij"]
+        },
+        "netflix": {
+            "pattern": ["netflix"],
+            "field": ["tegenpartij"]
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "fortis": {
+        "sep": ";",
+        "date_cols": ["Uitvoeringsdatum", "Valutadatum"],
+        "cols": {
+            "Volgnummer": "uniq_id",
+            "Uitvoeringsdatum": "datum",
+            "Valutadatum": "datum_valuta",
+            "Bedrag": "bedrag",
+            "TEGENPARTIJ VAN DE VERRICHTING": "tegenpartij",
+            "Details": "details"
+        }
+    },
+    "kbc": {
+        "sep": ";",
+        "date_cols": ["Datum", "Valuta"],
+        "cols": {
+            "Bedrag": "bedrag",
+            "Datum": "datum",
+            "Omschrijving": "details",
+            "Valuta": "datum_valuta",
+            "rekeningnummer tegenpartij": "tegenpartij_rek",
+            "Naam tegenpartij": "tegenpartij",
+            "gestructureerde mededeling": "mededeling_struct",
+            "Vrije mededeling": "mededeling"
+        }
+    },
+    "paypal": {
+        "sep": ",",
+        "date_cols": ["Datum"],
+        "cols": {
+            "Datum": "datum",
+            "Naam": "tegenpartij",
+            "Bruto": "bedrag",
+            "Onderwerp": "details",
+            "Transactiereferentie": "uniq_id",
+            "Type": "type"
+        }
+    },
+    "mastercard": {
+        "sep": ";",
+        "date_cols": ["datum verrichting", "Datum verrekening"],
+        "cols": {
+            "datum verrichting": "datum",
+            "Datum verrekening": "datum_valuta",
+            "bedrag in EUR": "bedrag",
+            "Handelaar": "tegenpartij",
+            "toelichting": "details"
+        }
+    }
+}

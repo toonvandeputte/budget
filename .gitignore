@@ -1,0 +1,8 @@
+*.csv
+output
+config.json
+bin
+_input
+include
+lib
+pyvenv.cfg
